@@ -1,8 +1,7 @@
-//
-//  TabGesture.swift
-//  MyDiary
-//
-//  Created by Hyeonho on 2023/05/31.
-//
-
+import SwiftUI
 import Foundation
+
+func endEditing() {
+    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder),
+                                    to: nil, from: nil, for: nil)
+}

@@ -1,15 +1,37 @@
-//
-//  IndexView.swift
-//  MyDiary
-//
-//  Created by Hyeonho on 2023/05/31.
-//
 
 import SwiftUI
 
 struct IndexView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            VStack(spacing: 30){
+                Spacer()
+                Text("나만의")
+                    .font(.custom("GamjaFlower-Regular", size: 60))
+                Text("일기")
+                    .font(.custom("GamjaFlower-Regular", size: 60))
+                Spacer()
+                
+                NavigationLink {
+                    LoginView()
+                } label: {
+                    Text("로그인하러 가기!")
+                        .foregroundColor(.blue)
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                }
+                
+                NavigationLink {
+                    RegisterView()
+                } label: {
+                    Text("회원가입하러 가기!")
+                        .foregroundColor(.orange)
+                        .font(.system(size: 20))
+                        .fontWeight(.bold)
+                }
+                Spacer()
+            }
+        }
     }
 }
 

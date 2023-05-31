@@ -1,17 +1,18 @@
-//
-//  MyDiaryApp.swift
-//  MyDiary
-//
-//  Created by Hyeonho on 2023/05/31.
-//
-
 import SwiftUI
+import FirebaseCore
 
 @main
 struct MyDiaryApp: App {
+    init () {
+        FirebaseApp.configure()
+    }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IndexView()
+//            NavigationView {
+//                MainView()
+//            }
+            
         }
     }
 }
