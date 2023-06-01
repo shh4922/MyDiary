@@ -8,10 +8,10 @@ struct MyDiaryApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            IndexView()
-//            NavigationView {
-//                MainView()
-//            }
+//            IndexView()
+            NavigationView {
+                MainView()
+            }
             
         }
     }
