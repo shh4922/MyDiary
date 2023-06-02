@@ -23,6 +23,7 @@
 		00BFFE2B2A27CB3C00EA1E5B /* SideMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BFFE2A2A27CB3C00EA1E5B /* SideMenuOptionView.swift */; };
 		00BFFE2D2A27CBD700EA1E5B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BFFE2C2A27CBD700EA1E5B /* SettingView.swift */; };
 		00BFFE2F2A27CBE000EA1E5B /* AllDialyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BFFE2E2A27CBE000EA1E5B /* AllDialyView.swift */; };
+		7799990B2A29C55700ECD533 /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7799990A2A29C55700ECD533 /* testModel.swift */; };
 		E10B0D8238C1CD6C775D36BD /* libPods-MyDiary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8166458FDDD86CF9695A7E /* libPods-MyDiary.a */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		00BFFE2C2A27CBD700EA1E5B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		00BFFE2E2A27CBE000EA1E5B /* AllDialyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllDialyView.swift; sourceTree = "<group>"; };
 		50814B7B8CD2D21F669DB08D /* Pods-MyDiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.release.xcconfig"; path = "Target Support Files/Pods-MyDiary/Pods-MyDiary.release.xcconfig"; sourceTree = "<group>"; };
+		7799990A2A29C55700ECD533 /* testModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModel.swift; sourceTree = "<group>"; };
 		8A93AD3C39039BE267448816 /* Pods-MyDiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDiary.debug.xcconfig"; path = "Target Support Files/Pods-MyDiary/Pods-MyDiary.debug.xcconfig"; sourceTree = "<group>"; };
 		BA8166458FDDD86CF9695A7E /* libPods-MyDiary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDiary.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -83,9 +85,9 @@
 		00B95B8D2A2775D3004721F4 /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				779999092A29C54900ECD533 /* Model */,
 				00BFFE1B2A277C3400EA1E5B /* ETC */,
 				00B95BA72A277711004721F4 /* GoogleService-Info.plist */,
-				00B95BA22A27761E004721F4 /* Model */,
 				00B95BA12A277619004721F4 /* ViewModel */,
 				00B95BA02A277617004721F4 /* View */,
 				00B95B9F2A277607004721F4 /* Info.plist */,
@@ -137,19 +139,20 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		00B95BA22A27761E004721F4 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		00BFFE1B2A277C3400EA1E5B /* ETC */ = {
 			isa = PBXGroup;
 			children = (
 				00BFFE1C2A277C5500EA1E5B /* TabGesture.swift */,
 			);
 			path = ETC;
+			sourceTree = "<group>";
+		};
+		779999092A29C54900ECD533 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7799990A2A29C55700ECD533 /* testModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9444616717ECC4882328DB70 /* Pods */ = {
@@ -289,6 +292,7 @@
 				00B95BA62A277656004721F4 /* LoginView.swift in Sources */,
 				00BFFE252A27A16700EA1E5B /* MainView.swift in Sources */,
 				00BFFE272A27B62900EA1E5B /* SideMenuView.swift in Sources */,
+				7799990B2A29C55700ECD533 /* testModel.swift in Sources */,
 				00BFFE2B2A27CB3C00EA1E5B /* SideMenuOptionView.swift in Sources */,
 				00BFFE1F2A277CC900EA1E5B /* RegisterView.swift in Sources */,
 				00BFFE1D2A277C5500EA1E5B /* TabGesture.swift in Sources */,
