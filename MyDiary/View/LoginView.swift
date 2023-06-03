@@ -10,6 +10,9 @@ import SwiftUI
 struct LoginView: View {
     @State var userid = ""
     @State var password = ""
+    
+    @GestureState private var dragOffset = CGSize.zero
+    
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         VStack{
@@ -99,6 +102,11 @@ struct LoginView: View {
                 
             }
             .navigationBarBackButtonHidden(true)
+            .gesture(DragGesture().updating($dragOffset, body: { (value, state, transaction) in
+                if(value.startLocation.x < 20 && value.translation.width > 100) {
+                    dismiss()
+                }
+            }))
         }
         
         
